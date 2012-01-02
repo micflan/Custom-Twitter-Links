@@ -1,0 +1,16 @@
+{
+	"name": "Custom Twitter Links",
+	"version": "0.1.0",
+	"description": "Add your own links to the Twitter.com nav bar. Useful for Lists, Searches, etc.",
+	"icons":{
+		"128":"icon_128.png"
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["https://twitter.com/*", "http://twitter.com/*"],
+			"js": ["jquery.min.js", "script.js"]
+		}
+	]
+
+}
